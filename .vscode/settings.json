@@ -1,5 +1,5 @@
 {
-    "conventionalCommits.scopes": [
-        "E-commerce"
-    ]
+  "conventionalCommits.scopes": ["E-commerce"],
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
 }
