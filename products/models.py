@@ -21,7 +21,7 @@ class Category(TimeStampedModel):
         return self.name
     
     def get_absolute_url(self):
-        return reverse('proucts:list_by_category', kwargs={'slug': self.slug})
+        return reverse('products:list_by_category', kwargs={'slug': self.slug})
     
 class Product(TimeStampedModel):
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
@@ -42,5 +42,5 @@ class Product(TimeStampedModel):
         return self.name
     
     def get_absolute_url(self):
-        return reverse('proucts:detail', kwargs={'slug': self.slug})
+        return reverse('products:detail', kwargs={'slug': self.slug})
 
